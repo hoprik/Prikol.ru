@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+}
+
+body{
+  background-image: url(images/514ac38dafda9005cdd2d9e283d62482.jpg);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav{
+  width: 100%;
+  height: 50px;
+}
+
+.navigator{
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+}
+
+.navigator{
+  padding: 10px;
+}
+
+#main{
+  color: white;
+  height: 10px;
+}
+
+.select{
+  margin-bottom: 10px;
+}
+
+.drop{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+  margin: 2px;
+  margin-left: 20px;
+}
+.dropdown{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 0%;
+  opacity: 0%;
+  transition: 1s;
+  border-radius: 5px 5px;
+  z-index: 9;
+}
+
+.dropdown a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.drop:hover .dropdown{
+  height: 100%;
+  opacity: 100%;
+}
+
+.drop:hover{
+  color:red;
+  transition: 1s;
+}
+
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 100%;
+  height: 50px;
+}
+
+.center{
+  margin: 0 auto;
+  padding: 20% 0;
+  width: 500px;
+}
+
+.center h1{
+  color:white;
+}
+
+.hrefs{
+  display: flex;
+  flex-direction: row;
+  margin-left: 14%;
+}
+
+.workspace{
+  height: 94.5%;
+}
+
+.workspaceBlur{
+  height: 94.5%;
+  background: rgb(184, 238, 255);
+}
+
+.effect{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 5;
+  transition: 1s ease;
+}
+
+.image{
+  position: relative;
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+  top: 50px;
+}
+
+.image img{
+  position: relative;
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.divButton{
+  position: relative;
+  top: 230px;
+  width: fit-content;
+  margin: auto auto;
+}
+
+.addButton{
+  margin: auto auto;
+}
+
+.images{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.images_img{
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.choose_images{
+  display: flex;
+  width: fit-content;
+  height: 50px;
+  flex-direction: row;
+  position: relative;
+  top: 200px;
+  margin: auto auto;
+}
+
+.fileC {
+  color: transparent;
+}
+
+.tools{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tools > div{
+  position: relative;
+  margin-left: 10px;
+  top: 250px;
+}
+
+.tools > .inputList input{
+  width: 50px;
+  text-align: end;
+}
+
+#image_img{
+  position: relative;
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.snow{
+  position: absolute;
+  top: -25px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  animation: fall infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fall {
+  0%{
+    top: -25px;
+  }
+  100%{
+    top: 100%;
+  }
+}
+
+#canvasPaint{
+  position: relative;
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.brush{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.brush > *{
+  position: relative;
+  margin-left: 10px;
+  top: 200px;
+}
+
+.brush > input[type="color"]{
+  background-color: rgba(240, 248, 255, 0);
+  border: 0;
+}
+
+.galcka{
+  margin: 2px;
+}

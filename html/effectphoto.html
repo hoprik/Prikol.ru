@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приколы.ру</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+  <header>
+    <nav>
+      <ul class="navigator">
+        <div class="bg"></div>
+        <h1 id="main">Приколы.ру</h1>
+        <div class="drop">
+          <p>приколы с изображениями</p>
+          <div class="dropdown">            
+            <a class="dropHref" href="../html/scroll.html">скролл</a>
+            <a class="dropHref" href="../html/effectphoto.html">эфекты на фото</a>
+            <a class="dropHref" href="../html/createimage.html">создание</a>
+            <a class="dropHref" href="../html/random.html">рандомные картинки</a>
+          </div>
+        </div>
+        <div class="drop">
+          <p>текст</p>
+          <div class="dropdown">            
+            <a class="dropHref" href="#">а</a>
+            <a class="dropHref" href="#">б</a>
+            <a class="dropHref" href="#">в</a>
+            <a class="dropHref" href="#">г</a>
+          </div>
+        </div>
+        <div class="drop">
+          <p>текст</p>
+          <div class="dropdown">            
+            <a class="dropHref" href="#">а</a>
+            <a class="dropHref" href="#">б</a>
+            <a class="dropHref" href="#">в</a>
+            <a class="dropHref" href="#">г</a>
+          </div>
+        </div>
+  </nav>
+  </header>
+<body>
+  <div class="effect"></div>
+  <div class="workspace">
+    <div class="image">
+      <img src="" alt="" id="image_img">
+    </div>
+    <div class="tools">
+        <div class="getButton">
+            <button class="fileOpen">Открыть файл</button>
+        </div>
+        <div class="saveButton">
+            <button class="fileSave">Сахранить</button>
+        </div>
+        <div class="effectList">
+            <select class="effectList_s">
+              <option value="brightness">Яркость</option>
+              <option value="vibrance">Насыщенность</option>
+              <option value="hue">Оттенок</option>
+              <option value="gamma">Гамма</option>
+              <option value="clip">Клип</option>
+              <option value="stackBlur">Размытие</option>
+              <option value="contrast">Контраст</option>
+              <option value="saturation">Насыщенность</option>
+              <option value="exposure">Экспозиция</option>
+              <option value="sepia">Сепия</option>
+              <option value="noise">Шум</option>
+              <option value="sharpen">Точность</option>
+            </select>
+        </div>
+        <div class="inputList">
+            <input type="number" class="inputN">
+        </div>
+        <div class="userList">
+            <select class="userList_S"></select>
+        </div>
+    </div>
+  </div>
+<script src="/js/caman.js"></script>
+<script src="/js/effectphoto.js"></script>
+<script src="/js/changeBG.js"></script>
+</body>
+</html>
